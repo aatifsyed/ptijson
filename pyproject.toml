@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "ijson"
+version = "0.1.0"
+description = ""
+authors = ["Aatif Syed <aatifsyedyp@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+argcomplete = "^2.0.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+black = "^21.12b0"
+mypy = "^0.931"
+
+[tool.poetry.scripts]
+ijson = "ijson:_main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
