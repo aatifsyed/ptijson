@@ -3,6 +3,9 @@ name = "ptijson"
 version = "0.1.0"
 description = "Interactive JSON queries, built on prompt toolkit and jmespath"
 authors = ["Aatif Syed <aatifsyedyp@gmail.com>"]
+repository = "https://github.com/aatifsyed/ptijson"
+readme = "README.md"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.8"
