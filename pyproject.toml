@@ -1,12 +1,14 @@
 [tool.poetry]
-name = "ijson"
+name = "ptijson"
 version = "0.1.0"
-description = ""
+description = "Interactive JSON queries, built on prompt toolkit and jmespath"
 authors = ["Aatif Syed <aatifsyedyp@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 argcomplete = "^2.0.0"
+prompt-toolkit = "^3.0.26"
+jmespath = "^0.10.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.0"
@@ -14,7 +16,8 @@ black = "^21.12b0"
 mypy = "^0.931"
 
 [tool.poetry.scripts]
-ijson = "ijson:_main"
+ptijson = "ptijson:_main"
+ijson = "ptijson:_main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
